@@ -1,0 +1,393 @@
+<!doctype html>
+  <html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORMULIR RENCANA PELAKSANAAN PEMBELAJARAN</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      label {
+        /*color: #0d6efd;*/
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+    <form method="post" action="" enctype="multipart/form-data">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-10 mx-auto">
+            <div class="card border-0 shadow rounded-3 mb-2 mt-2">
+              <div class="card-body col-12 mx-auto p-4">
+                <div class="row mb-5">
+                  <div class="container py-3">
+                    <div class="row align-items-center mb-3">
+                      <div class="col-lg-5 px-5 mx-auto order-2 order-lg-2"><img src="../img/UMPPcilik.png" alt=""
+                        class="img-fluid mb-4 mb-lg-0"></div>
+                        <div class="col-lg-7 order-2 order-lg-2"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+                          <h4>RENCANA PELAKSANAAN PEMBELAJARAN</h4>
+                          <h5>Universitas Muhammadiyah Pekajangan Pekalongan</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 mb-5">
+                      <span class="input-group-text" style="width: 100%;"> Fakultas  </span>
+                      <div class="input-group">
+                        <input class="form-control" placeholder="Sumber Referensi yang digunakan">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 mb-5">
+                      <span class="input-group-text" style="width: 100%;"> Program Studi </span>
+                      <div class="input-group">
+                        <input class="form-control" placeholder="Jenis Tagihan/Tugas/Penilaian">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="nama_makul" class="form-label">Nama Mata Kuliah</label>
+                      <select id="nama_makul" name="nama_makul" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="kode_makul" class="form-label">Kode Mata Kuliah </label>
+                      <input type="text" class="form-control" id="nama_dosen" name="nama_dosen" placeholder="Choose Makul, Kode Auto Fill..." disabled>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="semester" class="form-label">Semester</label>
+                      <div class="input-group">
+                        <select id="semester_gasnap" name="semester_gasnap" class="form-select">
+                          <option selected disabled>Semester...</option>
+                          <option>Gasal</option>
+                          <option>Genap</option>
+                        </select> 
+                        <input class="form-control" list="datalistTahun" id="semester_th" name="semester_th" placeholder="Year">
+                        <datalist id="datalistTahun">
+                          <option value="2015"></option>
+                          <option value="2016"></option>
+                          <option value="2017"></option>
+                          <option value="2018"></option>
+                          <option value="2019"></option>
+                          <option value="2020"></option>
+                          <option value="2021"></option>
+                          <option value="2022"></option>
+                          <option value="2023"></option>
+                          <option value="2024"></option>
+                          <option value="2025"></option>
+                          <option value="2026"></option>
+                          <option value="2027"></option>
+                          <option value="2028"></option>
+                          <option value="2029"></option>
+                          <option value="2030"></option>
+                        </datalist>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="sks" class="form-label">Bobot/ SKS </label>
+                      <select id="sks" name="sks" class="form-select">
+                        <option selected disabled>Choose...</option>
+                        <option>1 (Satu)</option>
+                        <option>2 (Dua)</option>
+                        <option>3 (Tiga)</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="nama_dosen" class="form-label">Nama Dosen Pengampu</label>
+                      <input type="text" class="form-control" id="nama_dosen" name="nama_dosen" placeholder="Type Your Name...">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="nama_dosen" class="form-label">CPMK</label>
+                      <input class="form-control" list="datalistCpmk" id="semester_th" name="semester_th" placeholder="A">
+                      <datalist id="datalistCpmk">
+                        <option value="A"></option>
+                        <option value="B"></option>
+                        <option value="C"></option>
+                        <option value="D"></option>
+                        <option value="E"></option>
+                        <option value="F"></option>
+                        <option value="G"></option>
+                        <option value="H"></option>
+                        <option value="I"></option>
+                      </datalist>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="semester" class="form-label">Pelaksanaan</label>
+                      <div class="input-group">
+                        <label for="semester" class="input-group-text">Pertemuan Ke-</label>
+                        <input class="form-control" list="datalistPertem" id="semester_th" name="semester_th" placeholder="1">
+                        <datalist id="datalistPertem">
+                          <option value="1"></option>
+                          <option value="2"></option>
+                          <option value="3"></option>
+                          <option value="4"></option>
+                          <option value="5"></option>
+                          <option value="6"></option>
+                          <option value="7"></option>
+                          <option value="8"></option>
+                          <option value="9"></option>
+                          <option value="10"></option>
+                          <option value="11"></option>
+                          <option value="12"></option>
+                          <option value="13"></option>
+                          <option value="14"></option>
+                          <option value="15"></option>
+                          <option value="16"></option>
+                        </datalist>
+                        <label for="semester" class="input-group-text">Waktu</label>
+                        <input class="form-control" id="semester_th" name="semester_th" placeholder="30 Menit">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="nama_dosen" class="form-label">SUB CPMK</label>
+                      <input class="form-control" list="datalistCpmk" id="semester_th" name="semester_th" placeholder="A">
+                      <datalist id="datalistCpmk">
+                        <option value="A"></option>
+                        <option value="B"></option>
+                        <option value="C"></option>
+                        <option value="D"></option>
+                        <option value="E"></option>
+                        <option value="F"></option>
+                        <option value="G"></option>
+                        <option value="H"></option>
+                        <option value="I"></option>
+                      </datalist>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="nama_dosen" class="form-label">Bahan Kajian</label>
+                      <input class="form-control" list="datalistCpmk" id="semester_th" name="semester_th" placeholder="A">
+                      <datalist id="datalistCpmk">
+                        <option value="A"></option>
+                        <option value="B"></option>
+                        <option value="C"></option>
+                        <option value="D"></option>
+                        <option value="E"></option>
+                        <option value="F"></option>
+                        <option value="G"></option>
+                        <option value="H"></option>
+                        <option value="I"></option>
+                      </datalist>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="nama_dosen" class="form-label">Metode Penelitian</label>
+                      <input class="form-control" list="datalistCpmk" id="semester_th" name="semester_th" placeholder="Ceramah">
+                      <datalist id="datalistCpmk">
+                        <option value="Ceramah"></option>
+                        <option value="Tanya Jawab"></option>
+                        <option value="Brainstorming"></option>
+                        <option value="Demonstrasi"></option>
+                        <option value="Simulasi"></option>
+                        <option value="Diskusi Kelompok"></option>
+                      </datalist>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                      <span class="input-group-text" style="width: 100%;"> Media Pembelajaran </span>
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Media Pembelajaran. Example :
+                        I. ..., (Pisahkan dengan Koma)
+                        II. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <label for="nama_dosen" class="form-label">Kegiatan Pembelajaran</label>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                      <span class="input-group-text" style="width: 100%;"> Tahapan</span>
+                      <div class="input-group">
+                        <label for="nama_dosen" class="form-control">Pendahuluan</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <span class="input-group-text" style="width: 100%;"> Aktifitas</span>
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Aktifitas. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <span class="input-group-text" style="width: 100%;"> Metode</span>
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Metode. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Tahapan</span> -->
+                      <div class="input-group">
+                        <label for="nama_dosen" class="form-control">Kegiatan Inti</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Aktifitas</span> -->
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Aktifitas. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Metode</span> -->
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Metode. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Tahapan</span> -->
+                      <div class="input-group">
+                        <label for="nama_dosen" class="form-control">Penutup</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Aktifitas</span> -->
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Aktifitas. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Metode</span> -->
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Metode. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Tahapan</span> -->
+                      <div class="input-group">
+                        <label for="nama_dosen" class="form-control">Tugas</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Aktifitas</span> -->
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Aktifitas. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Metode</span> -->
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Metode. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Tahapan</span> -->
+                      <div class="input-group">
+                        <label for="nama_dosen" class="form-control">Kriteria Penilaian</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Aktifitas</span> -->
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Aktifitas. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Metode</span> -->
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Metode. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Tahapan</span> -->
+                      <div class="input-group">
+                        <label for="nama_dosen" class="form-control">Referensi</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Aktifitas</span> -->
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Aktifitas. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                      <!-- <span class="input-group-text" style="width: 100%;"> Metode</span> -->
+                      <div class="input-group">
+                        <textarea class="form-control" placeholder="Metode. Example :
+                        1. ..., (Pisahkan dengan Koma)
+                        2. ..., (Pisahkan dengan Koma)
+                        " style="height: 110px; "></textarea> <br>
+                      </div>
+                    </div>
+                    
+                    <!-- <div class="col-md-12">
+                      <input type="submit" class="form-control bg-info" value="selanjutnya" href="../index.html" />
+                    </div> -->
+                    <div class="text-center">
+                      <a href="../index.html" class="btn btn-primary text-center col-md-12"><b>Submit</b>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </body>
+
+    </html>
